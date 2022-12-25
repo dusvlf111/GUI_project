@@ -44,8 +44,9 @@ def merge_image():
     images = [Image.open(x) for x in list_file.get(0, END)]
     #파일 사이즈 가져오기
     #size -> size[0] 은 width, size[1] 은 height 
-    widths = [x.size[0] for x in images]
-    heights = [x.size[1] for x in images]
+    #widths = [x.size[0] for x in images]
+    #heights = [x.size[1] for x in images]
+    widths, heights = zip(*(x.size[0] for x in images))
     print('width  : ', widths)
     print('height : ', heights)
     #최대 폭, 전체 높이 구해옴
