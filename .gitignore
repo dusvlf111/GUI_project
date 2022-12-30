@@ -11,7 +11,8 @@
 #   my ignore
 
 *.png
-.3_11_1/*
+
+.venv/*
 
 
 
