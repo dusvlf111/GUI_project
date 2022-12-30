@@ -9,5 +9,6 @@ def screenshot():
     
 keyboard.add_hotkey('F9', screenshot)
 #키보드 핫키 등록 사용자가 F9키를 누르면 스크린 샷 저장
-
+#keyboard.add_hotkey('ctrl+shift+s', screenshot)
+#           컨트롤 쉬프트 s 스크린샷됨
 keyboard.wait('esc') #사용자가 esc를 누를 땎지 프로그램 수행
